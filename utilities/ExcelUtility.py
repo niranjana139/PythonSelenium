@@ -8,6 +8,7 @@ class ExcelUtility:
         self.file_path = file_path
         self.workbook = openpyxl.load_workbook(file_path)
 
+
     def get_string_data(self, row, col, sheet_name):
         """Get a string value from a specific cell (row, column)"""
         sheet = self.workbook[sheet_name]

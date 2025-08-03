@@ -45,6 +45,7 @@ class TestNewsTest:
         login_page.enter_password(password_value)
         login_page.click_signin_button()
         news_page =NewsPage(self.driver)
+
         # Verify Reset functionality
         news_page.click_tile()
         is_visible = news_page.is_reset_button_displayed()

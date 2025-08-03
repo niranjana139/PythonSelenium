@@ -28,7 +28,6 @@ class NewsPage:
         self.driver.find_element(*self.news_text).send_keys(news_text)
         self.driver.find_element(*self.save_btn).click()
 
-
     def is_alert_displayed(self):
         try:
             return self.driver.find_element(*self.alert).is_displayed()

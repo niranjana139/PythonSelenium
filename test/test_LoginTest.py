@@ -15,7 +15,6 @@ class TestLoginPage:
         #ExcelUtility.load_workbook("C:\\Users\\Netcom\\Desktop\\Niranjana Obsqura\\TestData.xlsx")
         username_value = excelUtility.get_string_data( 2,1,"LoginPage")
         password_value = excelUtility.get_string_data(2, 2, "LoginPage")
-
         login_page.enter_username(username_value)
         login_page.enter_password(password_value)
         login_page.click_signin_button()

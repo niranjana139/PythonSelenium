@@ -1,6 +1,6 @@
 import pytest
 
-from pythonSeleniumBasic.conftest import dataLoad
+from pythonSeleniumBasics.conftest import dataLoad
 
 
 @pytest.mark.usefixtures("dataLoad")
