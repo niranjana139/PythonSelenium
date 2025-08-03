@@ -25,7 +25,7 @@ import time
 import pytest
 from selenium import webdriver
 
-
+ 
 @pytest.fixture(scope="function")
 def browserinstance(request):
 

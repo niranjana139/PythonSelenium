@@ -7,7 +7,6 @@ from selenium.webdriver.support import expected_conditions as EC
 class LoginPage:
     def __init__(self, driver):
         self.driver = driver
-
         # Locators for elements on the LoginPage
         self.username_locator = (By.NAME, "username")
         self.password_locator = (By.NAME, "password")

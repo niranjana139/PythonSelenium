@@ -12,9 +12,6 @@ class TestLoginPage:
         self.driver.maximize_window()
         login_page=LoginPage(self.driver)
         excelUtility=ExcelUtility("C:\\Users\\Netcom\\Desktop\\Niranjana Obsqura\\TestData.xlsx")
-
-
-
         #ExcelUtility.load_workbook("C:\\Users\\Netcom\\Desktop\\Niranjana Obsqura\\TestData.xlsx")
         username_value = excelUtility.get_string_data( 2,1,"LoginPage")
         password_value = excelUtility.get_string_data(2, 2, "LoginPage")
