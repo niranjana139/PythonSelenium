@@ -1,5 +1,4 @@
 import os.path
-
 import pytest
 from openpyxl.workbook import web
 from selenium.webdriver.chrome.service import Service
