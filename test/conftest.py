@@ -5,12 +5,12 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.webdriver import WebDriver
 import pytest
 import random
-from utilities import ExcelUtility
+from utilities.ExcelUtility import ExcelUtility
 from pages.LoginPage import LoginPage
-
 import time
 import pytest
 from selenium import webdriver
+
 
 @pytest.fixture(scope="class")
 def setup():
