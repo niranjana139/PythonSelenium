@@ -1,10 +1,11 @@
 import json
-
+import sys
 import pytest
-
+import os
 from pages.LoginPage import LoginPage
 from utilities.ExcelUtility import ExcelUtility
-
+# Add the path to the pages directory
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'pages')))
 class TestLoginPage:
     def test_login_valid( self,browserinstance):
         self.driver = browserinstance

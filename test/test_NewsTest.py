@@ -1,12 +1,14 @@
 import pytest
 from selenium.webdriver.chrome import webdriver
-
+import sys
+import os
 from pages.LoginPage import LoginPage
 from pages.NewsPage import NewsPage
 
 
 from utilities.ExcelUtility import ExcelUtility
-
+# Add the path to the pages directory
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'pages')))
 class TestNewsTest:
 
     def test_verify_add_news(self,browserinstance):
