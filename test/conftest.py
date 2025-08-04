@@ -4,8 +4,6 @@ import pytest
 from openpyxl.workbook import web
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.webdriver import WebDriver
-
-
 import pytest
 import random
 from utilities import ExcelUtility
