@@ -1,6 +1,5 @@
 import os.path
 
-from pages.LoginPage import LoginPage
 
 import pytest
 from selenium import webdriver
@@ -55,14 +54,6 @@ def setup():
     driver.maximize_window()
     yield driver
     driver.quit()
-
-
-@pytest.fixture
-def login_page(setup):
-    """Fixture to get the LoginPage object."""
-    return LoginPage(setup)
-
-
 
 # Define a fixture for WebDriver (use the browser you prefer)
 @pytest.fixture(scope='function')
