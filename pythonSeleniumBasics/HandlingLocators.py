@@ -5,7 +5,6 @@ from BasicSelenium import BasicSelenium
 class HandlingLocators(BasicSelenium):
 
     def verify_locators(self):
-
         self.driver.get("https://selenium.qabible.in/simple-form-demo.php")
         # Locate an element with id, class name, tagname, etc.
         #self.driver.find_elements(By.TAG_NAME, "form")
