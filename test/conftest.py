@@ -1,13 +1,7 @@
 import os.path
-import pytest
-from openpyxl.workbook import web
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.webdriver import WebDriver
-import pytest
-import random
-from utilities.ExcelUtility import ExcelUtility
+
 from pages.LoginPage import LoginPage
-import time
+
 import pytest
 from selenium import webdriver
 
@@ -89,8 +83,6 @@ def pytest_addoption(parser):
     )
 
 
-import os
-import pytest
 
 
 import os
