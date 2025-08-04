@@ -5,12 +5,13 @@ import os
 from pages.LoginPage import LoginPage
 from utilities.ExcelUtility import ExcelUtility
 # Add the path to the pages directory
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'pages')))
+
 class TestLoginPage:
     def test_login_valid( self,browserinstance):
         self.driver = browserinstance
         self.driver.get("https://groceryapp.uniqassosiates.com/admin/login")
         self.driver.maximize_window()
+        sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'pages')))
         login_page=LoginPage(self.driver)
         excelUtility=ExcelUtility("C:\\Users\\Netcom\\Desktop\\Niranjana Obsqura\\TestData.xlsx")
         #ExcelUtility.load_workbook("C:\\Users\\Netcom\\Desktop\\Niranjana Obsqura\\TestData.xlsx")
