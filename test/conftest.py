@@ -4,7 +4,7 @@ import pytest
 from openpyxl.workbook import web
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.webdriver import WebDriver
-from pages.NewsPage import NewsPage
+
 
 import pytest
 import random
@@ -72,10 +72,6 @@ def login_page(setup):
     return LoginPage(setup)
 
 
-@pytest.fixture
-def news_page(setup):
-    """Fixture to get the NewsPage object."""
-    return NewsPage(setup)
 
 # Define a fixture for WebDriver (use the browser you prefer)
 @pytest.fixture(scope='function')
